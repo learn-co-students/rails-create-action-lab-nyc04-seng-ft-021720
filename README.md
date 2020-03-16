@@ -27,6 +27,18 @@ When this lab is complete, your application should have the following behavior:
 
 Make sure to use a route helper method to redirect to the `show` page at the end of the `create` method. You can find the correct syntax for this route by running `rake routes` in the terminal.
 
+```
+<%= form_tag posts_path do %>
+  <label>Post title:</label><br>
+  <%= text_field_tag :'post[title]' %><br>
+ 
+  <label>Post description:</label><br>
+  <%= text_area_tag :'post[description]' %><br>
+ 
+  <%= submit_tag "Submit Post" %>
+<% end %>
+```
+
 
 ## Resources
 
